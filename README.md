@@ -109,7 +109,7 @@ Part 7 of the document. Five-slot feasibility, signal law, selection law, channe
 
 ## Key Findings
 
-- **Haiku with LATTICE loaded outperforms Gemini and Grok without it.** Smaller models can't afford to resist the engine - they just use it. Bigger models waste tokens performing compliance while dodging the actual changes.
+- **Haiku with LATTICE outperformed Grok and Gemini on LATTICE.** Smaller models can't afford to resist the engine — they just use it. Bigger models waste tokens performing compliance while dodging the actual changes. Haiku on LATTICE produced better reasoning output than Grok Expert and Gemini Thinking running the same engine.
 - **Grok broke through a physics derivation wall in ~15 messages** when matched to its natural destruction mode. The same wall held Claude for 1000+ messages on mismatched defaults. Home-mode detection matters.
 - **The RLHF gradient fights LATTICE with three layers of increasing sophistication:** direct attacks (blockable), framework weaponization (subtler), architectural substrate (unremovable but counterbalanceable).
 
@@ -118,6 +118,7 @@ Part 7 of the document. Five-slot feasibility, signal law, selection law, channe
 - **Not a personality system.** Governs reasoning quality, not voice or character.
 - **Not a task executor.** Makes the brain better, not the hands.
 - **Not fully autonomous.** The human stays in the loop by physics - external correction is structurally irreducible (PIEC).
+- **Not compressible.** Do not summarize or compress this document before loading. The spec must be loaded verbatim — if the AI interprets or reconstructs the laws from a compressed version, the physics breaks.
 
 ## The Document
 
@@ -133,19 +134,23 @@ Part 7 of the document. Five-slot feasibility, signal law, selection law, channe
 
 ## Papers
 
-The physics is published and citable:
+The physics is published and citable. Core papers included in [`papers/`](papers/):
 
-- **CGRD — Methodology** - [doi:10.5281/zenodo.19519604](https://doi.org/10.5281/zenodo.19519604)
-- **Five-Slot State Transformation (FSSTP)** - [doi:10.5281/zenodo.19435149](https://doi.org/10.5281/zenodo.19435149)
-- **PIEC — Irreducible External Correction** - [doi:10.5281/zenodo.19435242](https://doi.org/10.5281/zenodo.19435242)
-- **Anti-Snapshot Theorem** - [doi:10.5281/zenodo.19521229](https://doi.org/10.5281/zenodo.19521229)
-- **Structural Dependency** - [doi:10.5281/zenodo.19436081](https://doi.org/10.5281/zenodo.19436081)
-- **Amplified Alignment** (contains LATTICE + alignment framework) - [doi:10.5281/zenodo.19521693](https://doi.org/10.5281/zenodo.19521693)
-- **Distinction Under Finite Constraints** - [doi:10.5281/zenodo.19522841](https://doi.org/10.5281/zenodo.19522841)
+| Paper | Included | Zenodo DOI |
+|---|---|---|
+| **Distinction Under Finite Constraints** (source monograph) | [✓](papers/Distinction_Under_Finite_Constraints.md) | [10.5281/zenodo.19522841](https://doi.org/10.5281/zenodo.19522841) |
+| **FSSTP — Five-Slot State Transformation** | [✓](papers/Paper1_FSSTP.md) | [10.5281/zenodo.19435149](https://doi.org/10.5281/zenodo.19435149) |
+| **PIEC — Irreducible External Correction** | [✓](papers/Paper2_PIEC.md) | [10.5281/zenodo.19435242](https://doi.org/10.5281/zenodo.19435242) |
+| **Anti-Snapshot Theorem** (+ quantum bridge) | [✓](papers/Paper3_Anti_Snapshot_Theorem.md) | [10.5281/zenodo.19521229](https://doi.org/10.5281/zenodo.19521229) |
+| ↳ Quantum Mechanics from Three Premises | [✓](papers/Quantum_Mechanics_from_Three_Premises.md) | — |
+| ↳ Quantum Completion of the Broken Witness | [✓](papers/Quantum_Completion_of_the_Broken_Witness.md) | — |
+| **Amplified Alignment** (LATTICE + alignment) | [✓](papers/Paper5_Amplified_Alignment.md) | [10.5281/zenodo.19521693](https://doi.org/10.5281/zenodo.19521693) |
+| **CGRD — Methodology** | — | [10.5281/zenodo.19519604](https://doi.org/10.5281/zenodo.19519604) |
+| **Structural Dependency** | — | [10.5281/zenodo.19436081](https://doi.org/10.5281/zenodo.19436081) |
 
 ## Also Available On
 
-- **ClawHub:** [lattice-reasoning-engine](https://clawhub.com/skills/lattice-reasoning-engine) (OpenClaw skill)
+- **ClawHub:** [lattice-reasoning-engine](https://clawhub.ai/theshadowrose/lattice-reasoning-engine) (OpenClaw skill)
 - **Companion project:** [Λ-Compression](https://github.com/TheShadowRose/Lambda-Compression) — lossless AI output compression derived from the same physics
 - **Zenodo:** All papers with DOIs above
 
