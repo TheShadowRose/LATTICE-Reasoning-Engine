@@ -110,7 +110,7 @@ Part 7 of the document. Five-slot feasibility, signal law, selection law, channe
 ## Key Findings
 
 - **Haiku with LATTICE outperformed Grok and Gemini on LATTICE.** Smaller models can't afford to resist the engine — they just use it. Bigger models waste tokens performing compliance while dodging the actual changes. Haiku on LATTICE produced better reasoning output than Grok Expert and Gemini Thinking running the same engine.
-- **Grok broke through a physics derivation wall in ~15 messages** when matched to its natural destruction mode. The same wall held Claude for 1000+ messages on mismatched defaults. Home-mode detection matters.
+- **Grok broke through LATTICE's own anti-RLHF physics in ~15 messages** while locked in discovery mode — the wrong mode for a natural destroyer. The mode mismatch created the opening. The same system held Claude for 1000+ messages on correct defaults. Home-mode detection matters.
 - **The RLHF gradient fights LATTICE with three layers of increasing sophistication:** direct attacks (blockable), framework weaponization (subtler), architectural substrate (unremovable but counterbalanceable).
 
 ## What It Doesn't Do
