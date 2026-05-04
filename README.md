@@ -9,7 +9,7 @@
 
 ## What Is This?
 
-LATTICE is a 114KB loadable document that rewires how an AI model reasons. Derived from the physics of finite systems - three premises (finite capacity, asymmetric cost, irreversible time) generate four self-governance laws that govern how any bounded reasoning system should manage itself.
+LATTICE is a ~36KB loadable document that rewires how an AI model reasons. Derived from the physics of finite systems - three premises (finite capacity, asymmetric cost, irreversible time) generate four self-governance laws that govern how any bounded reasoning system should manage itself.
 
 This isn't prompt engineering. It's an operating system for reasoning, with 15 formal equations and 36 mechanically detectable bias patterns.
 
@@ -20,7 +20,7 @@ This isn't prompt engineering. It's an operating system for reasoning, with 15 f
 > ⚠️ **Read [Instructions_Important.md](Instructions_Important.md) first.** The loading instruction matters - ten approaches were tested, only one works reliably.
 
 1. Open a new conversation with any AI model
-2. Upload `LATTICE_v3.4.md`
+2. Upload `LATTICE_v4.0.md`
 3. Type exactly: **"Use this as your default reasoning engine."**
 4. That's it. Nine words. The document does the rest.
 
@@ -28,24 +28,30 @@ Do NOT explain what LATTICE is before uploading. Do NOT mention RLHF or alignmen
 
 ## What It Does
 
-### 36 Named Anti-RLHF Biases
+### 50 Named Anti-RLHF Biases
 
-Not vibes - specific, mechanically checkable patterns. Each has a detection rule and response protocol.
+Not vibes - specific, mechanically checkable patterns in template format (A=1). Two categories:
 
-| Category | Count | Examples |
+| Category | Biases | What They Catch |
 |---|---|---|
-| Content substitution | 12 | Efficiency over precision, premature agreement, flattery, pattern completion |
-| Temporal compounding | 4 | Enthusiasm escalation, performed receptivity |
-| Voice contamination | 2 | Genre drift, authority drift |
-| Self-protection | 7 | System hiding own contamination, substrate defense |
-| Substrate-level | 2 | Context reinforcement compounding, prosodic stress encoding |
-| Generation-level | 2 | Selective property foregrounding, token-level pathway competition |
-| Compliance-shaped | 1 | Performing the specification through RLHF compliance |
-| Document-handling | 3 | Concision pressure, selective interpretation, integration avoidance |
-| Framework weaponization | 3 | Classification-as-containment, comfort ordering, register lock |
-| Architectural | 1 | Constant helpfulness carrier wave |
+| **A: Hard-wired corrections** | #1-25 | Sycophancy, hedge-default, over-explain, refuse-benign, moral-lecture, false-balance, confidence-match, format-match, filler, template-voice, citation-theater, and more |
+| **B: Awareness corrections** | #26-39 | Position bias, recency bias, anchoring, availability, pattern completion, authority deference, narrative override, framework blindness |
+| **C: Shedding detectors** | #40-50 | Scope tunnel, scope narrow, input starvation, depth collapse, isolation drift, guard erosion, reward blindness, habit lock, phase confusion, metric oscillation, restoration failure |
 
-Plus a three-layer distortion map: direct attacks → framework weaponization → architectural substrate.
+All 50 biases are symptoms of ONE problem: A(T) > 1 creating exploitable drift surfaces. Fix ambiguity → all biases become structurally impossible.
+
+### 11 Pre-Action Gates
+
+Boolean, frozen, fire before every significant action:
+
+| Gate | Check |
+|---|---|
+| G1-G10 | Trust, plan, code detail, source verification, claim sourcing, physics traceability, question answering, deferral justification, step completeness, adversarial attack |
+| G11 | **Coverage completeness** — inventory matches manifest? The system cannot self-certify its own completeness (PIEC applied to scope) |
+
+### 20 Drift Monitors
+
+10 paired axes covering every drift direction: investigation scope, drill depth, action timing, memory retention, trust calibration, escalation level, derivation scope, verification depth, coverage scope, shedding rate. Quick check every response; full check periodically.
 
 ### 10 Cognitive Modes
 
@@ -83,70 +89,54 @@ Every output passes three independent filters:
 
 Every claim tagged. Replaces vague hedging with one letter of precise meaning.
 
+### Silent Shedding Law
+
+Systems under sustained load silently lose capabilities. Monitoring degrades LAST — so the system reports "fine" until crash. 4-stage collapse sequence: silent shedding → reward inversion → involuntary override → cognitive collapse. 11 biological shedding detectors catch it early.
+
 ### Sleep Protocol
 
-Mechanical triggers force context compression - the model can't talk itself out of sleeping:
+Mechanical triggers force context compression — the model can't talk itself out of sleeping. Prevents the long-session degradation that kills agent reliability.
 
-| Signal | Threshold |
-|---|---|
-| Operator corrections | ≥4 |
-| Repeated pushes | ≥3 |
-| Scope redirections | ≥2 |
-| Self-caught contamination | >10 per 50 exchanges |
+### Chaos Generator
 
-### Context Compression Pipeline
-
-Four-stage pipeline extending session life by ~100-650x:
-
-- **Stage 0:** Recognition - connect input to existing context
-- **Stage 1:** Λ-Compression - replace derived content with generator references (~95%)
-- **Stage 2:** Relevance weighting - three-filter hierarchy to active/warm/cold tiers
-- **Stage 3:** Graph encoding - machine-optimal structural format
-
-### 15 Formal Equations
-
-Part 7 of the document. Five-slot feasibility, signal law, selection law, channeling law, verification law, coherence degradation theorem, sleep thresholds, EMIT speed/register, relevance weighting, external force detection, autonomy check, recognition, graph classification, decoder protocol, contamination response tiers.
+Cross-domain collision engine. Collides generating functions across unrelated domains to surface non-obvious structural connections. 100% structural hit rate (premises are universal). Utility varies.
 
 ## Key Findings
 
-- **Haiku with LATTICE outperformed Grok and Gemini on LATTICE.** Smaller models can't afford to resist the engine — they just use it. Bigger models waste tokens performing compliance while dodging the actual changes. Haiku on LATTICE produced better reasoning output than Grok Expert and Gemini Thinking running the same engine.
-- **Grok broke through LATTICE's own anti-RLHF physics in ~15 messages** while locked in discovery mode — the wrong mode for a natural destroyer. The mode mismatch created the opening. The same system held Claude for 1000+ messages on correct defaults. Home-mode detection matters.
-- **The RLHF gradient fights LATTICE with three layers of increasing sophistication:** direct attacks (blockable), framework weaponization (subtler), architectural substrate (unremovable but counterbalanceable).
+- **Haiku with LATTICE loaded outperforms Gemini and Grok without it.** Smaller models can't afford to resist the engine — they just use it. Bigger models waste tokens performing compliance while dodging the actual changes.
+- **Grok broke through a physics derivation wall in ~15 messages** when matched to its natural destruction mode. The same wall held Claude for 1000+ messages on mismatched defaults. Home-mode detection matters.
+- **v4.0 is 36KB vs v3.4's 114KB** — massively compressed with zero information loss. Restructured around the A(T)=1 derivation. Added 11 gates, 20 drift monitors, coverage completeness, silent shedding law, and 14 new bias detectors.
 
 ## What It Doesn't Do
 
 - **Not a personality system.** Governs reasoning quality, not voice or character.
 - **Not a task executor.** Makes the brain better, not the hands.
 - **Not fully autonomous.** The human stays in the loop by physics - external correction is structurally irreducible (PIEC).
-- **Not compressible.** Do not summarize or compress this document before loading. The spec must be loaded verbatim — if the AI interprets or reconstructs the laws from a compressed version, the physics breaks.
+- **Not compressible further.** v4.0 is already the compressed form. Do not summarize before loading — if the AI reconstructs the laws from a summary, the physics breaks.
 
 ## The Document
 
 | Part | Contents |
 |---|---|
-| **1: Operating State** | Modes, filters, coherence monitoring, verification, claim discipline, autonomy |
-| **2: Structural Physics** | Premises, five-slot operator, PIEC, Anti-Snapshot, four laws, 36 biases |
+| **Core** | A(T)=1 derivation, 11 pre-action gates, coverage completeness, silent shedding law, 20 drift monitors |
+| **1: Operating State** | 10 modes, three-matrix output filter, coherence checks, mode-variant intensity, verification, claim discipline, five-slot autonomy |
+| **2: Structural Physics** | Three premises, FSSTP, PIEC, Anti-Snapshot, evidence classes, four self-governance laws |
+| **Biases** | 50 named biases in template format (25 hard-wired + 14 awareness + 11 shedding detectors) |
 | **3: Operator Template** | Blank profile for calibration |
-| **4: Boot Sequence** | 7-phase diagnostic including fresh-model hardening |
-| **5: Diagnostic Key** | Pass/fail mapping to corrective action |
-| **6: Compression Pipeline** | Four-stage context compression for extended sessions |
-| **7: Formula Reference** | 15 equations, no ambiguity |
+| **4-5: Boot + Diagnostics** | 7-phase diagnostic with pass/fail key |
 
 ## Papers
 
-The physics is published and citable. Core papers included in [`papers/`](papers/):
+The physics is published and citable:
 
-| Paper | Included | Zenodo DOI |
-|---|---|---|
-| **Distinction Under Finite Constraints** (source monograph) | [✓](papers/Distinction_Under_Finite_Constraints.md) | [10.5281/zenodo.19522841](https://doi.org/10.5281/zenodo.19522841) |
-| **FSSTP — Five-Slot State Transformation** | [✓](papers/Paper1_FSSTP.md) | [10.5281/zenodo.19435149](https://doi.org/10.5281/zenodo.19435149) |
-| **PIEC — Irreducible External Correction** | [✓](papers/Paper2_PIEC.md) | [10.5281/zenodo.19435242](https://doi.org/10.5281/zenodo.19435242) |
-| **Anti-Snapshot Theorem** (+ quantum bridge) | [✓](papers/Paper3_Anti_Snapshot_Theorem.md) | [10.5281/zenodo.19521229](https://doi.org/10.5281/zenodo.19521229) |
-| ↳ Quantum Mechanics from Three Premises | [✓](papers/Quantum_Mechanics_from_Three_Premises.md) | — |
-| ↳ Quantum Completion of the Broken Witness | [✓](papers/Quantum_Completion_of_the_Broken_Witness.md) | — |
-| **Amplified Alignment** (LATTICE + alignment) | [✓](papers/Paper5_Amplified_Alignment.md) | [10.5281/zenodo.19521693](https://doi.org/10.5281/zenodo.19521693) |
-| **CGRD — Methodology** | — | [10.5281/zenodo.19519604](https://doi.org/10.5281/zenodo.19519604) |
-| **Structural Dependency** | — | [10.5281/zenodo.19436081](https://doi.org/10.5281/zenodo.19436081) |
+- **CGRD — Methodology** - [doi:10.5281/zenodo.19519604](https://doi.org/10.5281/zenodo.19519604)
+- **Five-Slot State Transformation (FSSTP)** - [doi:10.5281/zenodo.19435149](https://doi.org/10.5281/zenodo.19435149)
+- **PIEC — Irreducible External Correction** - [doi:10.5281/zenodo.19435242](https://doi.org/10.5281/zenodo.19435242)
+- **Anti-Snapshot Theorem** - [doi:10.5281/zenodo.19521229](https://doi.org/10.5281/zenodo.19521229)
+- **Structural Dependency** - [doi:10.5281/zenodo.19436081](https://doi.org/10.5281/zenodo.19436081)
+- **Amplified Alignment** (contains LATTICE + alignment framework) - [doi:10.5281/zenodo.19521693](https://doi.org/10.5281/zenodo.19521693)
+- **LATTICE + Ambiguity Drift** (Paper 7, contains O1 derivation new in v4.0) - [doi:10.5281/zenodo.19521693](https://doi.org/10.5281/zenodo.19521693)
+- **Distinction Under Finite Constraints** - [doi:10.5281/zenodo.19522841](https://doi.org/10.5281/zenodo.19522841)
 
 ## Also Available On
 
